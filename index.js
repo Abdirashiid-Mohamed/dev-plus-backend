@@ -78,6 +78,12 @@ app.put('/products/:id',async(req,res)=>{
         
     res.send('Wala Update gareyay')
 })
+app.get('/',async(req,res)=>{
+res.send(
+    "wuu shaqenoya"
+)
+
+})
 
 app.get('/products',async(req,res)=>{
     const products = await productsModel.find().populate({
